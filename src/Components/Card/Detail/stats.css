@@ -1,0 +1,684 @@
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.stats{
+    padding: .2rem 0;
+}
+
+div > small{
+    padding-top: 1rem;
+}
+
+span > small{
+    padding-top: .3rem;
+}
+
+.stats__header{
+    display: flex;
+    justify-content: space-between;
+    width: 175px;
+    margin-left: auto;
+}
+
+.stats__title{
+    font-weight: 600;
+}
+
+.stats__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.stats__bar,
+.stats__bar::after{
+    position: relative;
+    width: 175px;
+    height: 8px;
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.stats__bar::after{
+    content: '';
+    position: absolute;
+    background-color: var(--color-bar);
+    transition: .3 ease;
+    left: -175px;
+     animation: stats-bar-fill 2s ease-in-out forwards; 
+}
+
+.stats__bar--1::after{
+    --skill-bar-length: 1%;
+}
+.stats__bar--2::after{
+    --skill-bar-length: 2%;
+}
+.stats__bar--3::after{
+    --skill-bar-length: 3%;
+}
+.stats__bar--4::after{
+    --skill-bar-length: 4%;
+}
+.stats__bar--5::after{
+    --skill-bar-length: 5%;
+}
+.stats__bar--6::after{
+    --skill-bar-length: 6%;
+}
+.stats__bar--7::after{
+    --skill-bar-length: 7%;
+}
+.stats__bar--8::after{
+    --skill-bar-length: 8%;
+}
+.stats__bar--9::after{
+    --skill-bar-length: 9%;
+}
+.stats__bar--10::after{
+    --skill-bar-length: 10%;
+}
+.stats__bar--11::after{
+    --skill-bar-length: 11%;
+}
+.stats__bar--12::after{
+    --skill-bar-length: 12%;
+}
+.stats__bar--13::after{
+    --skill-bar-length: 13%;
+}
+.stats__bar--14::after{
+    --skill-bar-length: 14%;
+}
+.stats__bar--15::after{
+    --skill-bar-length: 15%;
+}
+.stats__bar--16::after{
+    --skill-bar-length: 16%;
+}
+.stats__bar--17::after{
+    --skill-bar-length: 17%;
+}
+.stats__bar--18::after{
+    --skill-bar-length: 18%;
+}
+.stats__bar--19::after{
+    --skill-bar-length: 19%;
+}
+.stats__bar--20::after{
+    --skill-bar-length: 20%;
+}
+.stats__bar--21::after{
+    --skill-bar-length: 21%;
+}
+.stats__bar--22::after{
+    --skill-bar-length: 22%;
+}
+.stats__bar--23::after{
+    --skill-bar-length: 23%;
+}
+.stats__bar--24::after{
+    --skill-bar-length: 24%;
+}
+.stats__bar--25::after{
+    --skill-bar-length: 25%;
+}
+.stats__bar--26::after{
+    --skill-bar-length: 26%;
+}
+.stats__bar--27::after{
+    --skill-bar-length: 27%;
+}
+.stats__bar--28::after{
+    --skill-bar-length: 28%;
+}
+.stats__bar--29::after{
+    --skill-bar-length: 29%;
+}
+.stats__bar--30::after{
+    --skill-bar-length: 30%;
+}
+.stats__bar--31::after{
+    --skill-bar-length: 31%;
+}
+.stats__bar--32::after{
+    --skill-bar-length: 32%;
+}
+.stats__bar--33::after{
+    --skill-bar-length: 33%;
+}
+.stats__bar--34::after{
+    --skill-bar-length: 34%;
+}
+.stats__bar--35::after{
+    --skill-bar-length: 35%;
+}
+.stats__bar--36::after{
+    --skill-bar-length: 36%;
+}
+.stats__bar--37::after{
+    --skill-bar-length: 37%;
+}
+.stats__bar--38::after{
+    --skill-bar-length: 38%;
+}
+.stats__bar--39::after{
+    --skill-bar-length: 39%;
+}
+.stats__bar--40::after{
+    --skill-bar-length: 40%;
+}
+.stats__bar--41::after{
+    --skill-bar-length: 41%;
+}
+.stats__bar--42::after{
+    --skill-bar-length: 42%;
+}
+.stats__bar--43::after{
+    --skill-bar-length: 43%;
+}
+.stats__bar--44::after{
+    --skill-bar-length: 44%;
+}
+.stats__bar--45::after{
+    --skill-bar-length: 45%;
+}
+.stats__bar--46::after{
+    --skill-bar-length: 46%;
+}
+.stats__bar--47::after{
+    --skill-bar-length: 47%;
+}
+.stats__bar--48::after{
+    --skill-bar-length: 48%;
+}
+.stats__bar--49::after{
+    --skill-bar-length: 49%;
+}
+.stats__bar--50::after{
+    --skill-bar-length: 50%;
+}
+.stats__bar--51::after{
+    --skill-bar-length: 51%;
+}
+.stats__bar--52::after{
+    --skill-bar-length: 52%;
+}
+.stats__bar--53::after{
+    --skill-bar-length: 53%;
+}
+.stats__bar--54::after{
+    --skill-bar-length: 54%;
+}
+.stats__bar--55::after{
+    --skill-bar-length: 55%;
+}
+.stats__bar--56::after{
+    --skill-bar-length: 56%;
+}
+.stats__bar--57::after{
+    --skill-bar-length: 57%;
+}
+.stats__bar--58::after{
+    --skill-bar-length: 58%;
+}
+.stats__bar--59::after{
+    --skill-bar-length: 59%;
+}
+.stats__bar--60::after{
+    --skill-bar-length: 60%;
+}
+.stats__bar--61::after{
+    --skill-bar-length: 61%;
+}
+.stats__bar--62::after{
+    --skill-bar-length: 62%;
+}
+.stats__bar--63::after{
+    --skill-bar-length: 63%;
+}
+.stats__bar--64::after{
+    --skill-bar-length: 64%;
+}
+.stats__bar--65::after{
+    --skill-bar-length: 65%;
+}
+.stats__bar--66::after{
+    --skill-bar-length: 66%;
+}
+.stats__bar--67::after{
+    --skill-bar-length: 67%;
+}
+.stats__bar--68::after{
+    --skill-bar-length: 68%;
+}
+.stats__bar--69::after{
+    --skill-bar-length: 69%;
+}
+.stats__bar--70::after{
+    --skill-bar-length: 70%;
+}
+.stats__bar--71::after{
+    --skill-bar-length: 71%;
+}
+.stats__bar--72::after{
+    --skill-bar-length: 72%;
+}
+.stats__bar--73::after{
+    --skill-bar-length: 73%;
+}
+.stats__bar--74::after{
+    --skill-bar-length: 74%;
+}
+.stats__bar--75::after{
+    --skill-bar-length: 75%;
+}
+.stats__bar--76::after{
+    --skill-bar-length: 76%;
+}
+.stats__bar--77::after{
+    --skill-bar-length: 77%;
+}
+.stats__bar--78::after{
+    --skill-bar-length: 78%;
+}
+.stats__bar--79::after{
+    --skill-bar-length: 79%;
+}
+.stats__bar--80::after{
+    --skill-bar-length: 80%;
+}
+.stats__bar--81::after{
+    --skill-bar-length: 81%;
+}
+.stats__bar--82::after{
+    --skill-bar-length: 82%;
+}
+.stats__bar--83::after{
+    --skill-bar-length: 83%;
+}
+.stats__bar--84::after{
+    --skill-bar-length: 84%;
+}
+.stats__bar--85::after{
+    --skill-bar-length: 85%;
+}
+.stats__bar--86::after{
+    --skill-bar-length: 86%;
+}
+.stats__bar--87::after{
+    --skill-bar-length: 87%;
+}
+.stats__bar--88::after{
+    --skill-bar-length: 88%;
+}
+.stats__bar--89::after{
+    --skill-bar-length: 89%;
+}
+.stats__bar--90::after{
+    --skill-bar-length: 90%;
+}
+.stats__bar--91::after{
+    --skill-bar-length: 91%;
+}
+.stats__bar--92::after{
+    --skill-bar-length: 92%;
+}
+.stats__bar--93::after{
+    --skill-bar-length: 93%;
+}
+.stats__bar--94::after{
+    --skill-bar-length: 94%;
+}
+.stats__bar--95::after{
+    --skill-bar-length: 95%;
+}
+.stats__bar--96::after{
+    --skill-bar-length: 96%;
+}
+.stats__bar--97::after{
+    --skill-bar-length: 97%;
+}
+.stats__bar--98::after{
+    --skill-bar-length: 98%;
+}
+.stats__bar--99::after{
+    --skill-bar-length: 99%;
+}
+.stats__bar--100::after{
+    --skill-bar-length: 100%;
+}
+.stats__bar--101::after{
+    --skill-bar-length: 101%;
+}
+.stats__bar--102::after{
+    --skill-bar-length: 102%;
+}
+.stats__bar--103::after{
+    --skill-bar-length: 103%;
+}
+.stats__bar--104::after{
+    --skill-bar-length: 104%;
+}
+.stats__bar--105::after{
+    --skill-bar-length: 105%;
+}
+.stats__bar--106::after{
+    --skill-bar-length: 106%;
+}
+.stats__bar--107::after{
+    --skill-bar-length: 107%;
+}
+.stats__bar--108::after{
+    --skill-bar-length: 108%;
+}
+.stats__bar--109::after{
+    --skill-bar-length: 109%;
+}
+.stats__bar--110::after{
+    --skill-bar-length: 110%;
+}
+.stats__bar--111::after{
+    --skill-bar-length: 111%;
+}
+.stats__bar--112::after{
+    --skill-bar-length: 112%;
+}
+.stats__bar--113::after{
+    --skill-bar-length: 113%;
+}
+.stats__bar--114::after{
+    --skill-bar-length: 114%;
+}
+.stats__bar--115::after{
+    --skill-bar-length: 115%;
+}
+.stats__bar--116::after{
+    --skill-bar-length: 116%;
+}
+.stats__bar--117::after{
+    --skill-bar-length: 117%;
+}
+.stats__bar--118::after{
+    --skill-bar-length: 118%;
+}
+.stats__bar--119::after{
+    --skill-bar-length: 119%;
+}
+.stats__bar--120::after{
+    --skill-bar-length: 120%;
+}
+.stats__bar--121::after{
+    --skill-bar-length: 121%;
+}
+.stats__bar--122::after{
+    --skill-bar-length: 122%;
+}
+.stats__bar--123::after{
+    --skill-bar-length: 123%;
+}
+.stats__bar--124::after{
+    --skill-bar-length: 124%;
+}
+.stats__bar--125::after{
+    --skill-bar-length: 125%;
+}
+.stats__bar--126::after{
+    --skill-bar-length: 126%;
+}
+.stats__bar--127::after{
+    --skill-bar-length: 127%;
+}
+.stats__bar--128::after{
+    --skill-bar-length: 128%;
+}
+.stats__bar--129::after{
+    --skill-bar-length: 129%;
+}
+.stats__bar--130::after{
+    --skill-bar-length: 130%;
+}
+.stats__bar--131::after{
+    --skill-bar-length: 131%;
+}
+.stats__bar--132::after{
+    --skill-bar-length: 132%;
+}
+.stats__bar--133::after{
+    --skill-bar-length: 133%;
+}
+.stats__bar--134::after{
+    --skill-bar-length: 134%;
+}
+.stats__bar--135::after{
+    --skill-bar-length: 135%;
+}
+.stats__bar--136::after{
+    --skill-bar-length: 136%;
+}
+.stats__bar--137::after{
+    --skill-bar-length: 137%;
+}
+.stats__bar--138::after{
+    --skill-bar-length: 138%;
+}
+.stats__bar--139::after{
+    --skill-bar-length: 139%;
+}
+.stats__bar--140::after{
+    --skill-bar-length: 140%;
+}
+.stats__bar--141::after{
+    --skill-bar-length: 141%;
+}
+.stats__bar--142::after{
+    --skill-bar-length: 142%;
+}
+.stats__bar--143::after{
+    --skill-bar-length: 143%;
+}
+.stats__bar--144::after{
+    --skill-bar-length: 144%;
+}
+.stats__bar--145::after{
+    --skill-bar-length: 145%;
+}
+.stats__bar--146::after{
+    --skill-bar-length: 146%;
+}
+.stats__bar--147::after{
+    --skill-bar-length: 147%;
+}
+.stats__bar--148::after{
+    --skill-bar-length: 148%;
+}
+.stats__bar--149::after{
+    --skill-bar-length: 149%;
+}
+.stats__bar--150::after{
+    --skill-bar-length: 150%;
+}
+.stats__bar--151::after{
+    --skill-bar-length: 151%;
+}
+.stats__bar--152::after{
+    --skill-bar-length: 152%;
+}
+.stats__bar--153::after{
+    --skill-bar-length: 153%;
+}
+.stats__bar--154::after{
+    --skill-bar-length: 154%;
+}
+.stats__bar--155::after{
+    --skill-bar-length: 155%;
+}
+.stats__bar--156::after{
+    --skill-bar-length: 156%;
+}
+.stats__bar--157::after{
+    --skill-bar-length: 157%;
+}
+.stats__bar--158::after{
+    --skill-bar-length: 158%;
+}
+.stats__bar--159::after{
+    --skill-bar-length: 159%;
+}
+.stats__bar--160::after{
+    --skill-bar-length: 160%;
+}
+.stats__bar--161::after{
+    --skill-bar-length: 161%;
+}
+.stats__bar--162::after{
+    --skill-bar-length: 162%;
+}
+.stats__bar--163::after{
+    --skill-bar-length: 163%;
+}
+.stats__bar--164::after{
+    --skill-bar-length: 164%;
+}
+.stats__bar--165::after{
+    --skill-bar-length: 165%;
+}
+.stats__bar--166::after{
+    --skill-bar-length: 166%;
+}
+.stats__bar--167::after{
+    --skill-bar-length: 167%;
+}
+.stats__bar--168::after{
+    --skill-bar-length: 168%;
+}
+.stats__bar--169::after{
+    --skill-bar-length: 169%;
+}
+.stats__bar--170::after{
+    --skill-bar-length: 170%;
+}
+.stats__bar--171::after{
+    --skill-bar-length: 171%;
+}
+.stats__bar--172::after{
+    --skill-bar-length: 172%;
+}
+.stats__bar--173::after{
+    --skill-bar-length: 173%;
+}
+.stats__bar--174::after{
+    --skill-bar-length: 174%;
+}
+.stats__bar--175::after{
+    --skill-bar-length: 175%;
+}
+.stats__bar--176::after{
+    --skill-bar-length: 176%;
+}
+.stats__bar--177::after{
+    --skill-bar-length: 177%;
+}
+.stats__bar--178::after{
+    --skill-bar-length: 178%;
+}
+.stats__bar--179::after{
+    --skill-bar-length: 179%;
+}
+.stats__bar--180::after{
+    --skill-bar-length: 180%;
+}
+.stats__bar--181::after{
+    --skill-bar-length: 181%;
+}
+.stats__bar--182::after{
+    --skill-bar-length: 182%;
+}
+.stats__bar--183::after{
+    --skill-bar-length: 183%;
+}
+.stats__bar--184::after{
+    --skill-bar-length: 184%;
+}
+.stats__bar--185::after{
+    --skill-bar-length: 185%;
+}
+.stats__bar--186::after{
+    --skill-bar-length: 186%;
+}
+.stats__bar--187::after{
+    --skill-bar-length: 187%;
+}
+.stats__bar--188::after{
+    --skill-bar-length: 188%;
+}
+.stats__bar--189::after{
+    --skill-bar-length: 189%;
+}
+.stats__bar--190::after{
+    --skill-bar-length: 190%;
+}
+.stats__bar--191::after{
+    --skill-bar-length: 191%;
+}
+.stats__bar--192::after{
+    --skill-bar-length: 192%;
+}
+.stats__bar--193::after{
+    --skill-bar-length: 193%;
+}
+.stats__bar--194::after{
+    --skill-bar-length: 194%;
+}
+.stats__bar--195::after{
+    --skill-bar-length: 195%;
+}
+.stats__bar--196::after{
+    --skill-bar-length: 196%;
+}
+.stats__bar--197::after{
+    --skill-bar-length: 197%;
+}
+.stats__bar--198::after{
+    --skill-bar-length: 198%;
+}
+.stats__bar--199::after{
+    --skill-bar-length: 199%;
+}
+.stats__bar--200::after{
+    --skill-bar-length: 200%;
+}
+
+@keyframes stats-bar-fill{
+    to{
+        transform: translate(var(--skill-bar-length))
+    }
+}
+
+@media (max-width: 600px){
+    .stats__header{
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+    }
+
+    div > small{
+        padding-top: 0;
+    }
+
+    .stats__item{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    .stats{
+        padding: 0;
+    }
+
+    .stats__title{
+        font-size: 12px;
+        line-height: 12px;
+    }
+}

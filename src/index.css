@@ -1,3 +1,17 @@
+:root{
+   --white: #f3f3f3;
+   --blue: #09f;   
+   --red: #f70f0f;
+   --gray: #dbdbdb;
+   --black: #030303;
+   --scrollThumb: #cc7878;;
+   --scrollThumbHover: #df5656;
+   --scrollThumbActive: #c73838;
+   --heightCardDetail: 640px;
+   --widthCardDetail: 360px;
+   --skill-bar-length: 0%;
+   --color-bar: tomato;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +19,74 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
 }
+
+body::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+body::-webkit-scrollbar-thumb {
+    background: var(--scrollThumb);
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollThumbHover);
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+body::-webkit-scrollbar-thumb:active {
+    background-color: var(--scrollThumbActive);
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+body::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+body::-webkit-scrollbar-track:hover,
+body::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.button-back{
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: var(--blue);
+  cursor: pointer;
+}
+
+.button-back:active{
+  transform: scale(.95);
+}
+
+i{
+  font-size: 2.5rem;
+}
+
+@media (max-width: 600px){
+  .flex{
+    height: 65vh;
+  }
 }

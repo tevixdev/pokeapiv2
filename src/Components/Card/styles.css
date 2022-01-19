@@ -1,0 +1,263 @@
+.container-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 16px;
+}
+
+.background-card-img{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.pokedex-img{
+    width: 70%;
+}
+
+.container-picture{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color:var(--white);
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.namePokemon-card{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--white);
+    /* text-shadow: 1px 0px 2px #a7f6ff; */
+}
+
+.img-card{
+    position: absolute;
+    height: 70%;
+    width: 70%;
+}
+
+.card{
+    min-height: 250px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 1px 0 2px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-around;
+    align-items: center;
+    background-image: url(../../Assets/Img/background.jpg);
+    background-size: 100% 40%;
+    background-repeat: no-repeat;
+    background-color: #00bcd4;
+    cursor: pointer;
+}
+
+
+
+
+.img-pokeball{
+    position: absolute;
+    /* top: calc(15rem - 96px); */
+    top: 1rem;
+    transform: translateX(4.5rem);
+    opacity: .3;
+}
+
+.container-detail{
+    position: absolute;
+    padding: .5rem 1rem;
+    bottom: 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: calc(100% - 2rem);
+    min-height: 65%;
+}
+
+.img-pokemon-detail{
+    position: absolute;
+    bottom: -20%;
+    max-height: 100%;
+    z-index: 10;
+    width: 50%;
+    transform: translateX(50%);
+}
+
+
+.card-detail{
+    height: var(--heightCardDetail);
+    width: var(--widthCardDetail);
+    border: 3px solid grey;
+    border-radius: 12px;
+    background-image: url('Assets/Img/Pokeball.svg');
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 5%;
+    position: relative;
+}
+
+.container-information{
+    width: 80%;
+    margin: .5rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    min-height: 48px;
+}
+
+.information{
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.container-information--item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.container-information--item::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 48px;
+    border-right: 1px solid #E0E0E0;
+    position: absolute;
+    top: 10%;
+    left: 24px;
+}
+
+.container-information--item:last-child::after{
+    width: unset;
+    height: unset;
+}
+
+.small{
+    font-size: small;
+    color: #666666;
+    margin-top: .5rem;
+}
+
+.container-types{
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.container-types > p{
+    margin: 0 .1rem;
+    z-index: 11;
+    position: relative;
+}
+
+.type {
+    margin: 0;
+    display: inline-block;
+    padding: 0.2rem 1rem;
+    border-radius: 16px;
+    color: white;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.container-img{
+    position: relative;
+    height: 35%;
+}
+
+.button-scrollTop{
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid var(--black);
+    background-color: var(--blue);
+    padding: 1rem;    
+    cursor: pointer;
+    position: fixed;
+    top: 90vh;
+}
+
+.button-scrollTop:active{
+  transform: scale(.95);
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.position{
+    position: relative;
+}
+
+@media (max-width: 600px){
+
+    .img-pokeball{
+        position: absolute;
+        top: 1rem;
+        width: 66px;
+        transform: translateX(3rem);
+        opacity: .3;
+    }
+    .card-detail{
+        width: unset;
+        aspect-ratio: 0.7;
+        height: 90%;
+        background-size: 50%;
+    }
+
+    .button-scrollTop{
+        top: 85vh;
+    }
+    .container-card{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .card{
+        padding: 1rem 0;
+        min-height: unset;
+    }
+    .container-picture{
+        width: 75px;
+        height: 75px;
+    }
+    
+    .namePokemon-card{
+        font-size: 1rem;
+    }
+
+    .information{
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    
+    .small{
+        font-size: 11px;
+    }
+    .container-information--item::after{
+        left: 10px;
+        height: 40px;
+    }
+    .container-types{
+        margin-top: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .type{
+        padding-top: 0.2rem 0.5rem;
+        font-size: 12px;
+    }
+    .container-detail{
+        min-height: 50%;
+    }
+
+    .img-pokemon-detail{
+        max-height: 90%;
+    }
+}
