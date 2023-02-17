@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/pokeapiv2/static/css/main.323ae774.css",
+    "main.js": "/pokeapiv2/static/js/main.407b4964.js",
+    "static/media/pokemon-title.png": "/pokeapiv2/static/media/pokemon-title.b183a3db11b6aa6a78ac.png",
+    "static/media/background.jpg": "/pokeapiv2/static/media/background.f3d56418098218e17557.jpg",
+    "static/media/pikachu-sad.png": "/pokeapiv2/static/media/pikachu-sad.0c8e0544534b202ef31a.png",
+    "static/media/spain_flag.ico": "/pokeapiv2/static/media/spain_flag.ccc5456f02d4238f74b2.ico",
+    "static/media/united_flag.ico": "/pokeapiv2/static/media/united_flag.03ba7ce3ab5cf2ded76a.ico",
+    "static/media/Pokeball.svg": "/pokeapiv2/static/media/Pokeball.a8bf96e8055a286f11cd.svg",
+    "index.html": "/pokeapiv2/index.html",
+    "main.323ae774.css.map": "/pokeapiv2/static/css/main.323ae774.css.map",
+    "main.407b4964.js.map": "/pokeapiv2/static/js/main.407b4964.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.323ae774.css",
+    "static/js/main.407b4964.js"
+  ]
+}
